@@ -65,7 +65,7 @@ const Navbar = () => {
               open={Boolean(anchorEl)}
               onClose={handleClose}
             >
-              <MenuItem sx={{padding: "1rem"}} onClick={() => {navigate("/dashboard"); handleClose()}}><Home /> Home</MenuItem>
+              <MenuItem sx={{padding: "1rem"}} onClick={() => {navigate("/dashboard"); handleClose()}}><Home /> Inicio</MenuItem>
               <MenuItem sx={{padding: "1rem"}} onClick={handleProfile}><AssignmentInd /> Perfil</MenuItem>
               <Divider />
               <MenuItem sx={{padding: "1rem"}} onClick={handleLoguot}>
