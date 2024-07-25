@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Box, Typography, TextField, Button, Link, Grid, Alert } from '@mui/material';
 import axios from "../axios/axiosConfig";
 import { useNavigate } from 'react-router-dom';
-import { jwtDecode } from "jwt-decode";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -108,7 +107,7 @@ const Login = () => {
           </Button>
         </form>
         <Grid container justifyContent="space-between" mt={2}>
-          <Link href="/update-password" variant="body2" color="primary">
+          <Link href="/" variant="body2" color="primary">
             Actualizar contraseña
           </Link>
           <Link href="/register" variant="body2" color="primary">
