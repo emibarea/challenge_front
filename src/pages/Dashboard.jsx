@@ -11,6 +11,7 @@ const Dashboard = ({ user, facturas }) => {
       <Box sx={{textAlign: "center"}}>
       <Typography variant='h3' marginTop="1rem" color="primary">Dashboard</Typography>
       <Typography variant='h5' marginTop="1rem">Bienvenido, {user.name} !</Typography>
+      {facturas.length === 0 && <Typography marginTop="1rem" variant='h6'>Todavia no tienes facturas.</Typography>}
       </Box>
       {facturas.length > 0 && <Facturas facturas={facturas} />}
     </Box>

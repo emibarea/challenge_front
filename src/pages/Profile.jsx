@@ -134,12 +134,15 @@ const PrivateProfile = () => {
 
     if (!token) {
       navigate("/")
-    } else{
+    } 
+    try {
       const getUserData = async () => {
         const response = await axiosClient.get(`/api/users/getData`)
         setUser(response.data)
       }
       getUserData()
+    } catch (error) {
+      console.error(error.response.data.message)
     }
   },[])
 
