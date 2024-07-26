@@ -7,7 +7,7 @@ import LogoutIcon from '@mui/icons-material/Logout';
 import { AssignmentInd, Home } from '@mui/icons-material';
 
 const Navbar = () => {
-
+  const user = localStorage.getItem("token")
   const [anchorEl, setAnchorEl] = useState(null);
   const navigate = useNavigate();
 
@@ -38,7 +38,7 @@ const Navbar = () => {
             Prueba técnica SIW Cargo
           </Typography>
         </Box>
-        {true && (
+        {user && (
           <div>
             <IconButton
               edge="end"
